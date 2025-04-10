@@ -17,6 +17,6 @@ router.use('/auth', authRoutes)
 router.use('/seeds', seedsRoutes)
 router.use('/batch', batchRoutes)
 router.use('/batchlog', batchLogRoutes)
-router.use('/seedbank', seedbankroutes)
+router.use('/seedBanks', seedbankroutes)
 
 export default router

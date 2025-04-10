@@ -9,7 +9,7 @@ const app = express();
 app.use(bodyParser.json());
 
 app.use('/api/seeds', seedRoutes);
-app.use('/api/seed-banks', seedBankRoutes);
+app.use('/api/seedBanks', seedBankRoutes);
 
 const PORT = process.env.PORT || 5000;
 

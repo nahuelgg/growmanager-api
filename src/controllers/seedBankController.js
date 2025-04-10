@@ -26,7 +26,7 @@ export const createSeedBank = async (req, res) => {
 
   try {
     const newSeedBank = await createSeedBankService({ name, email, phone });
-    res.status(201).json(buildSuccessResponse({ seedBank: newSeedBank }));
+    res.status(201).json(buildSuccessResponse({ seedBanks: newSeedBank }));
   } catch (error) {
     res.status(500).json(getServerErrorResponse('Error creating seed bank', error.message));
   }
